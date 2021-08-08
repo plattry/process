@@ -1,0 +1,36 @@
+{
+    "name": "plattry/process",
+    "description": "The plattry process manager package",
+    "keywords": [
+        "plattry",
+        "process manager",
+        "event",
+        "signal",
+        "message queue"
+    ],
+    "type": "library",
+    "license": "GPL-3.0",
+    "autoload": {
+        "psr-4": {
+            "Plattry\\Process\\": "src/"
+        },
+        "exclude-from-classmap": [
+          "/test/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Andrew Lee",
+            "email": "sixser@foxmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "ext-ev": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*",
+        "ext-sysvmsg": "*",
+        "plattry/utils": "^0.1.0"
+    }
+}
